@@ -27,11 +27,10 @@ public class PersonDTO {
     @Size(min = 2, max = 5)
     private String lastName;
 
-    @NotEmpty
-    @CPF
-    private String cpf;
-
     private String birthDate;
+
+    @Size(max = 30)
+    private String status;
 
     @Valid
     @NotEmpty
